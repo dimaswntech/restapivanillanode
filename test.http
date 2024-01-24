@@ -7,3 +7,12 @@ Accept: application/json
 {
   "todo" : "Mandi"
 }
+###
+PUT http://localhost:3000
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id" : 0,
+  "todo" : "Belajar Java"
+}
