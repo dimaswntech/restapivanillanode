@@ -21,10 +21,9 @@ export class TodolistService{
         req.addListener("data", (data)=>{
             const body = JSON.parse(data.toString())
             this.todolist.push(body.todo)
+            res.write(this.getJsonTodoList())
+            res.end()
         })
-
-        res.write(this.getJsonTodoList())
-        res.end()
     }
     updateTodo(req, res){
         req.addListener("data", (data)=>{
