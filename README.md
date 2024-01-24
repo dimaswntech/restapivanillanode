@@ -1,2 +1,2 @@
 # restapivanillanode
-test
+test make restapivanillanode
